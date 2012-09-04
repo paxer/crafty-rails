@@ -1,29 +1,28 @@
-# Crafty::Rails
+# crafty-rails
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'crafty-rails'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install crafty-rails
+This gem packages the Crafty 0.5.1 assets (JavaScripts) for the Rails 3.1+ [asset
+pipeline](http://guides.rubyonrails.org/asset_pipeline.html), so you never have
+to download it through the [web
+interface](http://craftycomponents.com/components/single/8/crafty) again.
 
 ## Usage
 
-TODO: Write usage instructions here
+In your Gemfile, add:
 
-## Contributing
+```ruby
+group :assets do
+  gem 'crafty-rails'
+end
+```
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+## Require Everything
+
+To require all Crafty modules, add the following to your application.js:
+
+```javascript
+//= require crafty
+```
+
+## Require Specific Modules
+
+This feature currently is not supportred.
