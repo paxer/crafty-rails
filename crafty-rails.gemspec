@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Crafty::Rails::VERSION
   gem.authors       = ["Pavel Kotlyar"]
   gem.email         = ["pavel.kotlyar@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Crafty's JavaScript files packaged for the Rails 3.1+ asset pipeline}
+  gem.summary       = %q{Crafty JavaScript game engine packaged for the Rails asset pipeline}
+  gem.homepage      = "https://github.com/paxer/crafty-rails"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
